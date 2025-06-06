@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title"
+        content="OmniTry: Virtual Try-On Anything without Masks" />
+    <meta property="og:url" content="https://omnitry.github.io/" />
+    <meta property="og:image" content="static/images/banner.png" />
+    <meta property="og:image:width" content="2048" />
+    <meta property="og:image:height" content="1152" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>OmniTry</title>
+    <script>
+        var x = window.innerWidth;
+        function resizeFresh(){
+            if(x!=window.innerWidth)
+                location.reload();
+        }
+    </script>
+    <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+<body onresize="resizeFresh()">
+
+    <section class="hero banner">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">
+                            <i class="pixart-alpha-icon"></i>
+                            <span style="color: rgb(115, 177, 244);">OmniTry:</span><br />
+                            Virtual Try-On Anything without Masks</h1>
+                            <div class="is-size-5 publication-authors" >
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://scholar.google.com.hk/citations?user=mZwJLeUAAAAJ&hl=zh-CN" target="_blank">Yutong Feng</a><sup>1†</sup>,</span>
+                            <span class="author-block">
+                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Linlin Zhang</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hengyuan Cao</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=LxiMyjQAAAAJ" target="_blank">Yiming Chen</a><sup>1</sup>,</span><br>
+                            <span class="author-block">
+                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiaoduan Feng</a><sup>1</sup>,</span>     
+                            <span class="author-block">
+                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jian Cao</a><sup>1</sup>,</span>   
+                            <span class="author-block">
+                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yuxiong Wu</a><sup>1</sup>,</span>   
+                            <span class="author-block">
+                                <a href="https://scholar.google.com.hk/citations?user=6hTbqDEAAAAJ&hl=zh-CN" target="_blank">Bin Wang</a><sup>1</sup></span>
+                            </div>
+                  
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block"><sup>1</sup>Kunbyte AI</span>
+                                &nbsp;
+                                <span class="author-block"><sup>2</sup>Zhejiang Univeristy</span>
+                                <span class="eql-cntrb"><small><br><sup>†</sup> &nbsp;Project Leader</small></span>
+                            </div>
+                            
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                  <a href="">
+                                    <img src="https://img.shields.io/badge/arXiv-OmniTry-red" alt="">
+                                  </a>
+                                  <a href="">
+                                    <img src="https://img.shields.io/badge/github-OmniTry-black" alt="">
+                                  </a>
+                                  <a href="">
+                                    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="">
+                                  </a>
+                                  <a href="">
+                                    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue" alt="">
+                                  </a>
+                                  <a href="">
+                                    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Benchmark-orange" alt="">
+                                  </a>
+
+                                    <!-- <a href="https://arxiv.org/pdf/2311.17002.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/papers/2311.17002" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">🤗</span>
+                                        <span>Paper page</span>
+                                    </a>
+                                </span>       
+                                <span class="link-block">
+                                    <a href="https://github.com/ali-vilab/Ranni" target="_blank" class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <img src="./static/images/github-mark.png" alt="">
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>                                 -->
+                                <!-- <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2311.17002" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>                            -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper teaser -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <img src="https://metac-open.oss-cn-hangzhou.aliyuncs.com/kunbyte/open_source/omnitry/teaser.png">
+        </div>
+      </div>
+    </section>
+    <!-- End Paper teaser -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                          Virtual Try-ON (VTON) is a practical and widely-applied task, for which most of existing works focus on clothes. This paper presents OmniTry, a unified framework that extends VTON beyond garment to encompass any wearable objects, e.g., jewelries and accessories, with mask-free setting for more practical application. When extending to various types of objects, data curation is challenging for obtaining paired images, i.e., the object image and the corresponding try-on result. To tackle this problem, we propose a two-staged pipeline: For the first stage, we leverage large-scale unpaired images, i.e., portraits with any wearable items, to train the model for mask-free localization. Specifically, we repurpose the inpainting model to automatically draw objects in suitable positions given an empty mask. For the second stage, the model is further fine-tuned with paired images to transfer the consistency of object appearance. We observed that the model after the first stage shows quick convergence even with few paired samples. OmniTry is evaluated on a comprehensive benchmark consisting of 12 common classes of wearable objects, with both in-shop and in-the-wild images. Experimental results suggest that OmniTry shows better performance on both object localization and ID-preservation compared with existing methods. The code, model weights, and evaluation benchmark of OmniTry will be made publicly available.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!-- demo video -->
+    <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container is-max-desktop">
+              <!-- <h2 class="title is-3">Demo Video</h2> -->
+              <video class="video-center" controls muted playsinline>
+                  <source src="https://metac-open.oss-cn-hangzhou.aliyuncs.com/kunbyte/open_source/omnitry/OmniTry_demo_video.mp4" type="video/mp4" class="video_style">
+              </video>
+          </div>
+      </div>
+  </section>
+  <!-- End demo video -->
+
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container is-max-desktop">
+              <!-- <h2 class="title is-3">Samples generated by <i class="pixart-alpha-icon"></i><span style="color: rgb(72, 87, 220);">Ranni</span></h2> -->
+              <h2 class="title is-3">Try-On Results</h2>
+              <p>Evaluation results on the OmniTry-Bench containing 12 main classes of wearable objects.</p>
+              <img loading="lazy" src="https://metac-open.oss-cn-hangzhou.aliyuncs.com/kunbyte/open_source/omnitry/tryon_result.png" alt="teaser" />                                   
+              <hr>
+              <p>Comparison with existing methods.</p>
+              <img loading="lazy" src="https://metac-open.oss-cn-hangzhou.aliyuncs.com/kunbyte/open_source/omnitry/method_comparison.png" alt="teaser" />                                   
+              <hr>
+              <p>Extending OmniTry to unconmmon classes.</p>
+              <img loading="lazy" src="https://metac-open.oss-cn-hangzhou.aliyuncs.com/kunbyte/open_source/omnitry/uncommon_classes.png" alt="teaser" />                                   
+
+          </div>
+      </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <!-- <h2 class="title is-3">Samples generated by <i class="pixart-alpha-icon"></i><span style="color: rgb(72, 87, 220);">Ranni</span></h2> -->
+            <h2 class="title is-3">Method</h2>
+            <img loading="lazy" src="https://metac-open.oss-cn-hangzhou.aliyuncs.com/kunbyte/open_source/omnitry/framework.png" alt="teaser" />                                   
+            <p><b>The two-staged training pipeline of OmniTry.</b> The first stage is built on in-the-wild portrait images to add wearable object onto the person in mask-free manner. The second stage introduces in-shop paired images, and targets to control the consistency of object appearance.</p>
+            
+        </div>
+    </div>
+</section>
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
+@article{feng2025omnitry,
+  title={OmniTry: Virtual Try-On Anything without Masks},
+  author={Feng, Yutong and Zhang, Linlin and Cao, Hengyuan and Chen, Yiming and Feng, Xiaoduan and Cao, Jian and Wu, Yuxiong and Wang, Bin},
+  journal={arXiv preprint arXiv:XXXXXXX},
+  year={2025}
+}
+            </code></pre></div></section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the of this website, we just ask that you link back to this page in
+                            the footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p class="has-text-centered">Total clicks: <span id="busuanzi_value_site_pv"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
